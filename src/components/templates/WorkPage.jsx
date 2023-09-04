@@ -14,6 +14,7 @@ import Thumbnail from "../molecules/Thumbnail";
 
 function WorkPage({ src, name, url, github, zenn, description }) {
   const [isLessThan1280] = useMediaQuery("(max-width: 1280px)");
+  const [isLessThan560] = useMediaQuery("(max-width: 560px)");
 
   return (
     <Box w="100vw" h="100vh">
@@ -47,17 +48,24 @@ function WorkPage({ src, name, url, github, zenn, description }) {
             top="8rem"
             left="0"
             right="0"
-            pl="8"
+            pl={isLessThan560 ? "0" : "12"}
             mt="5"
-            align={isLessThan1280 ? "center" : "start"}
             direction={isLessThan1280 ? "column" : "row"}
+            align={isLessThan1280 ? "center" : "start"}
           >
-            <Thumbnail src={src} />
-            <VStack pl="6" align="center">
-              <Text variant="primary" fontWeight="bold" fontSize="4.2rem">
+            <Thumbnail src={src} isLessThan560={isLessThan560} />
+            <VStack align={isLessThan1280 ? "center" : "start"}>
+              <Text
+                variant="primary"
+                fontWeight="bold"
+                fontSize={isLessThan560 ? "3rem" : "4.2rem"}
+              >
                 {name}
               </Text>
-              <HStack spacing={5}>
+              <HStack
+                spacing={isLessThan560 ? 1 : 5}
+                align={isLessThan1280 ? "center" : "start"}
+              >
                 <Button
                   variant="primary"
                   as="a"
@@ -88,7 +96,12 @@ function WorkPage({ src, name, url, github, zenn, description }) {
                   </Button>
                 )}
               </HStack>
-              <Text variant="primary" fontSize="xl" pt="6" pr="2">
+              <Text
+                variant="primary"
+                fontSize={isLessThan560 ? "lg" : "xl"}
+                pt="6"
+                pr="2"
+              >
                 {description}
               </Text>
             </VStack>
