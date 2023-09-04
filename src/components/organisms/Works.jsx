@@ -15,6 +15,8 @@ function Works() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    swipe: false,
+    draggable: false,
     responsive: [
       {
         breakpoint: 1200,
