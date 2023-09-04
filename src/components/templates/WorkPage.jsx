@@ -28,21 +28,23 @@ function WorkPage({ src, name, url, github, zenn, description }) {
           shadow="xl"
           position="relative"
         >
-          <Link to="/">
-            <Text
-              as="a"
-              position="absolute"
-              top={isLessThan1280 ? "8rem" : "1rem"}
-              left={isLessThan1280 ? "2rem" : "1rem"}
-              cursor="pointer"
-              fontWeight="bold"
-              fontSize="lg"
-              color="gray.700"
-              _hover={{ textDecoration: "underline" }}
-            >
-              ←ホームに戻る
-            </Text>
-          </Link>
+          {isLessThan1280 || (
+            <Link to="/">
+              <Text
+                as="a"
+                position="absolute"
+                top="1rem"
+                left="1rem"
+                cursor="pointer"
+                fontWeight="bold"
+                fontSize="lg"
+                color="gray.700"
+                _hover={{ textDecoration: "underline" }}
+              >
+                ←ホームに戻る
+              </Text>
+            </Link>
+          )}
           <Flex
             position="absolute"
             top="8rem"
@@ -53,6 +55,20 @@ function WorkPage({ src, name, url, github, zenn, description }) {
             direction={isLessThan1280 ? "column" : "row"}
             align={isLessThan1280 ? "center" : "start"}
           >
+            {isLessThan1280 && (
+              <Link to="/">
+                <Text
+                  as="a"
+                  cursor="pointer"
+                  fontWeight="bold"
+                  fontSize="lg"
+                  color="gray.700"
+                  _hover={{ textDecoration: "underline" }}
+                >
+                  ←ホームに戻る
+                </Text>
+              </Link>
+            )}
             <Thumbnail src={src} isLessThan560={isLessThan560} />
             <VStack align={isLessThan1280 ? "center" : "start"}>
               <Text
