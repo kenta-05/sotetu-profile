@@ -11,9 +11,9 @@ function Experience() {
       <Flex align="center" px="4">
         <VStack align="start" spacing="12">
           <Text variant="primary">
-            2022年10月ー
+            2022年11月ー
             {!isLargerThan600 && <br />}
-            独学でフロントエンドの勉強開始
+            独学でプログラミングの勉強開始
           </Text>
           <Text variant="primary">
             2023年1月ー
@@ -29,6 +29,31 @@ function Experience() {
             2023年4月ー
             {!isLargerThan600 && <br />}
             ReactとFirebaseを使ったTwitterクローン作成
+          </Text>
+          <Text variant="primary">
+            2023年5月ー
+            {!isLargerThan600 && <br />}
+            TypeScriptの勉強開始
+          </Text>
+          <Text variant="primary">
+            2023年5月ー
+            {!isLargerThan600 && <br />}
+            QuickURLの作成
+          </Text>
+          <Text variant="primary">
+            2023年6月ー
+            {!isLargerThan600 && <br />}
+            Next.jsの勉強開始
+          </Text>
+          <Text variant="primary">
+            2023年7月ー
+            {!isLargerThan600 && <br />}
+            タイピング冒険記の作成
+          </Text>
+          <Text variant="primary">
+            2023年8月ー
+            {!isLargerThan600 && <br />}
+            Node.jsの勉強開始
           </Text>
         </VStack>
       </Flex>

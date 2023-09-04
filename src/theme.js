@@ -41,6 +41,19 @@ const customTheme = extendTheme({
         },
       },
     },
+    Button: {
+      variants: {
+        primary: {
+          bg: "secondary.500",
+          color: "accent.500",
+          borderRadius: "full",
+          border: "2px",
+          borderColor: "accent.500",
+          shadow: "md",
+          _hover: { bg: "#e4e4e4" },
+        },
+      },
+    },
   },
   styles: {
     global: {

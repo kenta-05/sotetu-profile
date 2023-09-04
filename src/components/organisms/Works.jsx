@@ -2,10 +2,10 @@ import { Box, Grid, Text, VStack, useMediaQuery } from "@chakra-ui/react";
 import WorkCard from "../molecules/WorkCard";
 import "react-multi-carousel/lib/styles.css";
 import Slider from "react-slick";
-import sample from "../../assets/sample.png";
 import sample2 from "../../assets/sample2.png";
 import pokemonBook from "../../assets/works/pokemonBook.png";
 import quickUrl from "../../assets/works/quickUrl.png";
+import typingAdventure from "../../assets/works/typingAdventure.png";
 
 function Works() {
   const settings = {
@@ -53,7 +53,7 @@ function Works() {
           >
             <WorkCard src={pokemonBook} route={"pokemonbook"} />
             <WorkCard src={quickUrl} route={"quickurl"} />
-            <WorkCard src={sample} route={""} />
+            <WorkCard src={typingAdventure} route={"typing-adventure"} />
             <WorkCard src={sample2} route={""} />
           </Grid>
         )}
@@ -65,7 +65,7 @@ function Works() {
           <Slider {...settings}>
             <WorkCard src={pokemonBook} route={"pokemonbook"} />
             <WorkCard src={quickUrl} route={"quickurl"} />
-            <WorkCard src={sample} route={""} />
+            <WorkCard src={typingAdventure} route={"typing-adventure"} />
             <WorkCard src={sample2} route={""} />
           </Slider>
         </Box>

@@ -1,4 +1,4 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 function WorkCard({ src, route }) {
@@ -17,7 +17,7 @@ function WorkCard({ src, route }) {
     >
       <Image
         src={src}
-        alt="Sample Image"
+        alt="work image"
         transition="0.3s"
         cursor="pointer"
         sx={{

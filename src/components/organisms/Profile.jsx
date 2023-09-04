@@ -16,16 +16,18 @@ function Profile() {
         <Avatar
           src={icon}
           boxSize={{ base: "12rem", sm: "12rem", md: "14rem" }}
-          mr={{ base: "0", sm: "6" }}
+          mr={{ base: "2", sm: "6" }}
         />
         <VStack align={{ base: "center", xs: "start" }} justify="center">
-          <Text variant="primary" fontSize="5xl" pb="4" pt="5">
+          <Text variant="primary" fontSize="5xl" pb="4">
             ソテツ
           </Text>
           <Text variant="primary">
-            フロントエンド学習中です！
+            プログラミング学習中の18歳です
             <br />
-            Webアプリスマホアプリの開発に興味があります
+            将来はエンジニアとして働きたいと考えています
+            <br />
+            実務経験を積むためにインターンやアルバイトを探しています
           </Text>
         </VStack>
       </Flex>
