@@ -46,7 +46,7 @@ function Header() {
           icon={<AiFillGithub style={{ color: "#24292f" }} />}
           aria-label="Github"
           onClick={() => {
-            visitURL("https://github.com/sotetu-79");
+            visitURL("https://github.com/sotetu79");
           }}
         />
         <HeaderIcon
