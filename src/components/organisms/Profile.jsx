@@ -23,9 +23,9 @@ function Profile() {
             ソテツ
           </Text>
           <Text variant="primary">
-            プログラミング学習中の18歳です
+            プログラミング勉強中の高3の18歳
             <br />
-            将来はエンジニアとして働きたいと考えています
+            フィシルコム株式会社でインターン中
           </Text>
         </VStack>
       </Flex>
