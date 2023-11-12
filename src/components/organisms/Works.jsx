@@ -56,7 +56,7 @@ function Works() {
             <WorkCard src={pokemonBook} route={"pokemonbook"} />
             <WorkCard src={quickUrl} route={"quickurl"} />
             <WorkCard src={typingAdventure} route={"typing-adventure"} />
-            <WorkCard src={sample2} route={""} />
+            {/* <WorkCard src={sample2} route={""} /> */}
           </Grid>
         )}
       </VStack>
@@ -68,7 +68,7 @@ function Works() {
             <WorkCard src={pokemonBook} route={"pokemonbook"} />
             <WorkCard src={quickUrl} route={"quickurl"} />
             <WorkCard src={typingAdventure} route={"typing-adventure"} />
-            <WorkCard src={sample2} route={""} />
+            {/* <WorkCard src={sample2} route={""} /> */}
           </Slider>
         </Box>
       )}
