@@ -55,6 +55,11 @@ function Experience() {
             {!isLargerThan600 && <br />}
             Node.jsの勉強開始
           </Text>
+          <Text variant="primary">
+            2023年9月ー
+            {!isLargerThan600 && <br />}
+            株式会社フィシルコムで長期インターン開始
+          </Text>
         </VStack>
       </Flex>
     </VStack>
